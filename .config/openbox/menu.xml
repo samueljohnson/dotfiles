@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+	<menu id="apps-editors-menu" label="Development">
+		<item label="Geany IDE">
+			<action name="Execute">
+				<execute>
+					geany
+				</execute>
+			</action>
+		</item>
+		<item label="Qt Designer">
+			<action name="Execute">
+				<execute>
+					designer
+				</execute>
+			</action>
+		</item>
+		<item label="Qt Creator">
+			<action name="Execute">
+				<execute>
+					qtcreator
+				</execute>
+			</action>
+		</item>
+		<item label="Umbrello">
+			<action name="Execute">
+				<execute>
+					umbrello
+				</execute>
+			</action>
+		</item>
+		<item label="Kate">
+			<action name="Execute">
+				<command>
+					kate
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Eclipse">
+			<action name="Execute">
+				<execute>
+					eclipse
+				</execute>
+			</action>
+		</item>
+		<item label="Bluefish">
+			<action name="Execute">
+				<execute>
+					bluefish
+				</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-net-menu" label="Internet">
+		<item label="Chromium">
+			<action name="Execute">
+				<execute>
+					chromium
+				</execute>
+			</action>
+		</item>
+		<item label="Firefox">
+			<action name="Execute">
+				<command>
+					firefox
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+					<wmclass>
+						Firefox
+					</wmclass>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Thunderbird">
+			<action name="Execute">
+				<execute>
+					thunderbird
+				</execute>
+			</action>
+		</item>
+		<item label="Deluge">
+			<action name="Execute">
+				<execute>
+					deluge
+				</execute>
+			</action>
+		</item>
+		<item label="Konqueror">
+			<action name="Execute">
+				<command>
+					konqueror
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Pidgin Instant Messenger">
+			<action name="Execute">
+				<command>
+					pidgin
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+				</startupnotify>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-office-menu" label="Office">
+		<item label="LibreOffice Writer">
+			<action name="Execute">
+				<execute>
+					/usr/bin/libreoffice --writer
+				</execute>
+			</action>
+		</item>
+		<item label="LibreOffice Calc">
+			<action name="Execute">
+				<execute>
+					/usr/bin/libreoffice --calc
+				</execute>
+			</action>
+		</item>
+		<item label="LibreOffice Impress">
+			<action name="Execute">
+				<execute>
+					/usr/bin/libreoffice --impress
+				</execute>
+			</action>
+		</item>
+		<item label="LibreOffice Draw">
+			<action name="Execute">
+				<execute>
+					/usr/bin/libreoffice --draw
+				</execute>
+			</action>
+		</item>
+		<item label="LibreOffice Math">
+			<action name="Execute">
+				<execute>
+					/usr/bin/libreoffice --math
+				</execute>
+			</action>
+		</item>
+		<item label="Okular">
+			<action name="Execute">
+				<execute>
+					okular
+				</execute>
+			</action>
+		</item>
+		<item label="Dia">
+			<action name="Execute">
+				<execute>
+					dia
+				</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-multimedia-menu" label="Multimedia">
+		<item label="Clementine">
+			<action name="Execute">
+				<execute>
+					clementine
+				</execute>
+			</action>
+		</item>
+		<item label="Stellarium">
+			<action name="Execute">
+				<execute>
+					stellarium
+				</execute>
+			</action>
+		</item>
+		<item label="Celestia">
+			<action name="Execute">
+				<execute>
+					celestia
+				</execute>
+			</action>
+		</item>
+		<item label="VLC">
+			<action name="Execute">
+				<execute>
+					vlc
+				</execute>
+			</action>
+		</item>
+		<item label="Audacity">
+			<action name="Execute">
+				<execute>
+					audacity
+				</execute>
+			</action>
+		</item>
+		<item label="K3b">
+			<action name="Execute">
+				<command>
+					k3b
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+				</startupnotify>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-graphics-menu" label="Graphics">
+		<item label="Gimp">
+			<action name="Execute">
+				<command>
+					gimp
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Inkscape">
+			<action name="Execute">
+				<execute>
+					inkscape
+				</execute>
+			</action>
+		</item>
+		<item label="Blender">
+			<action name="Execute">
+				<execute>
+					blender
+				</execute>
+			</action>
+		</item>
+		<item label="Gwenview">
+			<action name="Execute">
+				<command>
+					gwenview
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Dia Diagram Editor">
+			<action name="Execute">
+				<command>
+					dia
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+				</startupnotify>
+			</action>
+		</item>
+	</menu>
+	<menu id="system-menu" label="System">
+		<item label="Obmenu">
+			<action name="Execute">
+				<execute>
+					obmenu
+				</execute>
+			</action>
+		</item>
+		<item label="Obconf">
+			<action name="Execute">
+				<command>
+					obconf
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Obkey">
+			<action name="Execute">
+				<execute>
+					obkey
+				</execute>
+			</action>
+		</item>
+		<item label="Openbox Autostart Configuration">
+			<action name="Execute">
+				<execute>
+					kate /home/kavya/.config/openbox/autostart
+				</execute>
+			</action>
+		</item>
+		<item label="Tint2conf">
+			<action name="Execute">
+				<execute>
+					tint2conf
+				</execute>
+			</action>
+		</item>
+		<item label="System Monitor">
+			<action name="Execute">
+				<execute>
+					ksysguard
+				</execute>
+			</action>
+		</item>
+		<item label="Gparted">
+			<action name="Execute">
+				<execute>
+					gksu gparted
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Reconfigure Openbox">
+			<action name="Reconfigure"/>
+		</item>
+	</menu>
+	<menu id="root-menu" label="Openbox 3">
+		<separator label="Applications"/>
+		<item label="Konsole">
+			<action name="Execute">
+				<execute>
+					konsole
+				</execute>
+			</action>
+		</item>
+		<item label="Dolphin">
+			<action name="Execute">
+				<execute>
+					dolphin
+				</execute>
+			</action>
+		</item>
+		<menu id="apps-editors-menu"/>
+		<menu id="apps-term-menu"/>
+		<menu id="root-menu-96046" label="Games">
+			<item label="Klotski">
+				<action name="Execute">
+					<execute>
+						gnotski
+					</execute>
+				</action>
+			</item>
+			<item label="Kollision">
+				<action name="Execute">
+					<execute>
+						kollision
+					</execute>
+				</action>
+			</item>
+			<item label="Nibbles">
+				<action name="Execute">
+					<execute>
+						gnibbles
+					</execute>
+				</action>
+			</item>
+			<item label="Chess">
+				<action name="Execute">
+					<execute>
+						glchess
+					</execute>
+				</action>
+			</item>
+			<item label="Travex">
+				<action name="Execute">
+					<execute>
+						gnotravex
+					</execute>
+				</action>
+			</item>
+			<item label="Mines">
+				<action name="Execute">
+					<execute>
+						gnomine
+					</execute>
+				</action>
+			</item>
+			<item label="Hedgewars">
+				<action name="Execute">
+					<execute>
+						hedgewars
+					</execute>
+				</action>
+			</item>
+			<item label="Tux Racer">
+				<action name="Execute">
+					<execute>
+						etracer
+					</execute>
+				</action>
+			</item>
+			<item label="Mastermind">
+				<action name="Execute">
+					<execute>
+						gnome-mastermind
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="apps-graphics-menu"/>
+		<menu id="apps-net-menu"/>
+		<menu id="apps-office-menu"/>
+		<menu id="root-menu-901313" label="Utils">
+			<item label="Virtualbox">
+				<action name="Execute">
+					<execute>
+						virtualbox
+					</execute>
+				</action>
+			</item>
+			<item label="Keepassx">
+				<action name="Execute">
+					<execute>
+						keepassx
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="apps-multimedia-menu"/>
+		<menu id="apps-fileman-menu"/>
+		<separator label="System"/>
+		<menu id="system-menu"/>
+		<separator/>
+		<menu id="root-menu-221521" label="Exit">
+			<item label="Hibernate">
+				<action name="Execute">
+					<execute>
+						sudo pm-hibernate
+					</execute>
+				</action>
+			</item>
+			<item label="Suspend">
+				<action name="Execute">
+					<execute>
+						sudo pm-suspend
+					</execute>
+				</action>
+			</item>
+			<item label="Reboot">
+				<action name="Execute">
+					<execute>
+						sudo /sbin/reboot
+					</execute>
+				</action>
+			</item>
+			<item label="Halt">
+				<action name="Execute">
+					<execute>
+						sudo /sbin/halt
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<item label="Log Out">
+			<action name="Exit">
+				<prompt>
+					yes
+				</prompt>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>
