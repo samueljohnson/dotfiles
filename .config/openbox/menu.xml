@@ -64,19 +64,11 @@
 				</execute>
 			</action>
 		</item>
-		<item label="Firefox">
+		<item label="Opera">
 			<action name="Execute">
-				<command>
-					firefox
-				</command>
-				<startupnotify>
-					<enabled>
-						yes
-					</enabled>
-					<wmclass>
-						Firefox
-					</wmclass>
-				</startupnotify>
+				<execute>
+					opera
+				</execute>
 			</action>
 		</item>
 		<item label="Thunderbird">
@@ -170,6 +162,13 @@
 		</item>
 	</menu>
 	<menu id="apps-multimedia-menu" label="Multimedia">
+		<item label="Google Earth">
+			<action name="Execute">
+				<execute>
+					google-earth
+				</execute>
+			</action>
+		</item>
 		<item label="Clementine">
 			<action name="Execute">
 				<execute>
@@ -346,6 +345,20 @@
 				</execute>
 			</action>
 		</item>
+		<item label="Firefox">
+			<action name="Execute">
+				<execute>
+					firefox
+				</execute>
+			</action>
+		</item>
+		<item label="Windows XP">
+			<action name="Execute">
+				<execute>
+					vboxmanage startvm &quot;Windows XP&quot;
+				</execute>
+			</action>
+		</item>
 		<menu id="apps-editors-menu"/>
 		<menu id="apps-term-menu"/>
 		<menu id="root-menu-96046" label="Games">
@@ -391,10 +404,10 @@
 					</execute>
 				</action>
 			</item>
-			<item label="Hedgewars">
+			<item label="Mari0">
 				<action name="Execute">
 					<execute>
-						hedgewars
+						mari0
 					</execute>
 				</action>
 			</item>
@@ -433,6 +446,7 @@
 			</item>
 		</menu>
 		<menu id="apps-multimedia-menu"/>
+		<menu execute="openbox-menu lxde-applications.menu" id="desktop-app-menu" label="All Programs"/>
 		<menu id="apps-fileman-menu"/>
 		<separator label="System"/>
 		<menu id="system-menu"/>

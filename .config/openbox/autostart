@@ -22,5 +22,6 @@ eval `cat ~/.fehbg` &
 tint2 &
 
 #Disable trackpad on boot
-/home/kavya/Programming/trackpad-toggle.sh &
+/home/ammu/Programming/trackpad-toggle.sh &
 /opt/kde/bin/kdeinit &
+(sleep 1 && /usr/bin/wbar) &

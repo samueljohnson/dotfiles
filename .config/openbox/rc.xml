@@ -118,7 +118,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>1</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>Alpha</name>
@@ -157,14 +157,14 @@
     <right>0</right>
   </margins>
   <dock>
-    <position>TopLeft</position>
+    <position>Top</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
     <noStrut>no</noStrut>
     <stacking>Above</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
-    <direction>Vertical</direction>
+    <direction>Horizontal</direction>
     <!-- 'Vertical' or 'Horizontal' -->
     <autoHide>no</autoHide>
     <hideDelay>300</hideDelay>
@@ -220,7 +220,7 @@
     </keybind>
     <keybind key="S-C-space">
       <action name="Execute">
-        <command>/home/kavya/Programming/trackpad-toggle.sh</command>
+        <command>/home/ammu/Programming/trackpad-toggle.sh</command>
       </action>
     </keybind>
     <keybind key="XF86Calculator">
@@ -500,12 +500,12 @@
       </mousebind>
     </context>
     <context name="AllDesktops">
-      <mousebind button="Left" action="Press">
+      <mousebind action="Press" button="Left">
         <action name="Focus"/>
         <action name="Raise"/>
         <action name="Unshade"/>
       </mousebind>
-      <mousebind button="Left" action="Click">
+      <mousebind action="Click" button="Left">
         <action name="ToggleAlwaysOnTop"/>
       </mousebind>
     </context>
