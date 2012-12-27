@@ -64,6 +64,13 @@
 				</execute>
 			</action>
 		</item>
+		<item label="Skype">
+			<action name="Execute">
+				<execute>
+					skype
+				</execute>
+			</action>
+		</item>
 		<item label="Opera">
 			<action name="Execute">
 				<execute>
@@ -404,6 +411,13 @@
 					</execute>
 				</action>
 			</item>
+			<item label="Hedgewars">
+				<action name="Execute">
+					<execute>
+						hedgewars
+					</execute>
+				</action>
+			</item>
 			<item label="Mari0">
 				<action name="Execute">
 					<execute>
@@ -446,7 +460,6 @@
 			</item>
 		</menu>
 		<menu id="apps-multimedia-menu"/>
-		<menu execute="openbox-menu lxde-applications.menu" id="desktop-app-menu" label="All Programs"/>
 		<menu id="apps-fileman-menu"/>
 		<separator label="System"/>
 		<menu id="system-menu"/>
@@ -473,10 +486,10 @@
 					</execute>
 				</action>
 			</item>
-			<item label="Halt">
+			<item label="Poweroff">
 				<action name="Execute">
 					<execute>
-						sudo /sbin/halt
+						poweroff
 					</execute>
 				</action>
 			</item>

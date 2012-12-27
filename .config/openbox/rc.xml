@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -41,7 +40,7 @@
   </placement>
   <theme>
     <name>Bear2</name>
-    <titleLayout>NSLDIMC</titleLayout>
+    <titleLayout>NSDLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -220,7 +219,7 @@
     </keybind>
     <keybind key="S-C-space">
       <action name="Execute">
-        <command>/home/ammu/Programming/trackpad-toggle.sh</command>
+        <command>/home/kavya/Programming/trackpad-toggle.sh</command>
       </action>
     </keybind>
     <keybind key="XF86Calculator">
@@ -298,6 +297,11 @@
         <y>0</y>
         <width>683</width>
         <height>768</height>
+      </action>
+    </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <command>gnome-screenshot</command>
       </action>
     </keybind>
     <keybind key="C-Tab">
@@ -751,5 +755,7 @@
     </context>
   
 -->
+    <application name="BGURxvt"><decor>no</decor><layer>below</layer><focus>yes</focus><position><x>center</x><y>center</y></position><desktop>all</desktop><skip_taskbar>true</skip_taskbar><maximized>true</maximized> #Only if you want a full size terminal.
+  </application>
   </applications>
 </openbox_config>

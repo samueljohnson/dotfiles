@@ -15,13 +15,25 @@
 #Networkmanager applet
 #(sleep 3 && /usr/bin/nm-applet --sm-disable) &
 
+#Composting
+#xcompmgr &
+
 #My wallpaper
 eval `cat ~/.fehbg` &
+#/usr/lib/xscreensaver/polyhedra -root &
+#/home/kavya/Programming/bing_wallpaper.sh
 
 #Tint2 panel
 tint2 &
 
 #Disable trackpad on boot
-/home/ammu/Programming/trackpad-toggle.sh &
+/home/kavya/Programming/trackpad-toggle.sh &
 /opt/kde/bin/kdeinit &
 (sleep 1 && /usr/bin/wbar) &
+
+#urxvt -name BGURxvt  +sb -tr &
+
+#Dropbox Client
+#dropboxd &
+
+#(prlvpn > /dev/null) &
