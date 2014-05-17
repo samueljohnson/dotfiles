@@ -1,4 +1,4 @@
-#
+
 # These things are run when an Openbox X Session is started.
 # You may place a similar script in $HOME/.config/openbox/autostart
 # to run user-specific things.
@@ -7,33 +7,52 @@
 # If you want to use GNOME config tools...
 #
 #if test -x /usr/lib/openbox/gnome-settings-daemon >/dev/null; then
-#  /usr/lib/openbox/gnome-settings-daemon &
+# /usr/lib/openbox/gnome-settings-daemon &
 #elif which gnome-settings-daemon >/dev/null 2>&1; then
-#  gnome-settings-daemon &
+# gnome-settings-daemon &
 #fi
 
-#Networkmanager applet
-#(sleep 3 && /usr/bin/nm-applet --sm-disable) &
-
-#Composting
-#xcompmgr &
+# Networkmanager applet
+# (sleep 3 && /usr/bin/nm-applet --sm-disable) &
 
 #My wallpaper
 eval `cat ~/.fehbg` &
-#/usr/lib/xscreensaver/polyhedra -root &
-#/home/kavya/Programming/bing_wallpaper.sh
+
+# Wicd Start
+(sleep 1 && /usr/bin/wicd-client --tray) &
+
+# Composting
+#(sleep 1 && compton --config /home/samuel/.config/compton.config -b -c -r 16 -l -24 -t -12 -G) &
+compton --config /home/samuel/.config/compton.config -b -c -r 16 -l -24 -t -12 -G
 
 #Tint2 panel
-tint2 &
+(sleep 1 && /usr/bin/tint2) &
+
+# Start bluetooth applet
+#(sleep 1 && bluetooth-applet) &
+
+#Battery Monitor
+(sleep 1 && batterymon) &
+
+# Clipboard Manager
+(sleep 1 && clipit) &
+
+# Volwheel
+(sleep 1 && volwheel) &
 
 #Disable trackpad on boot
-/home/kavya/Programming/trackpad-toggle.sh &
+sh /home/samuel/Programming/autostart/trackpad-toggle.sh &
+
 /opt/kde/bin/kdeinit &
-(sleep 1 && /usr/bin/wbar) &
 
-#urxvt -name BGURxvt  +sb -tr &
+# Wbar
+(sleep 2 && /usr/bin/wbar) &
 
-#Dropbox Client
-#dropboxd &
+# Disable mouse resume from sleep
+sudo /bin/sh /home/samuel/Programming/autostart/disable_mouse_resume.sh
 
-#(prlvpn > /dev/null) &
+# OpenSnap
+/usr/bin/opensnap -d
+
+# Artha Dictionary
+(sleep 2 && /usr/bin/artha) &

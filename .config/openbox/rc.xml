@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -22,7 +23,7 @@
        mouse into it, also raise the window -->
   </focus>
   <placement>
-    <policy>Smart</policy>
+    <policy>UnderMouse</policy>
     <!-- 'Smart' or 'UnderMouse' -->
     <center>yes</center>
     <!-- whether to place windows in the center of the free area found or
@@ -39,8 +40,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Bear2</name>
-    <titleLayout>NSDLIMC</titleLayout>
+    <name>Fog</name>
+    <titleLayout>NSLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -55,7 +56,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Sans</name>
-      <size>9</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -63,12 +64,12 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Sans</name>
-      <size>9</size>
+      <name>sans</name>
+      <size>8</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>Normal</slant>
+      <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
@@ -120,10 +121,7 @@
     <number>1</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>Alpha</name>
-      <name>Beta</name>
-      <name>Gamma</name>
-      <name>Delta</name>
+      <name>Arch Linux</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -156,14 +154,14 @@
     <right>0</right>
   </margins>
   <dock>
-    <position>Top</position>
+    <position>Bottom</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
     <noStrut>no</noStrut>
     <stacking>Above</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
-    <direction>Horizontal</direction>
+    <direction>Vertical</direction>
     <!-- 'Vertical' or 'Horizontal' -->
     <autoHide>no</autoHide>
     <hideDelay>300</hideDelay>
@@ -178,8 +176,58 @@
     <keybind key="C-A-Left">
       <action name="GoToDesktop"/>
     </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>/home/samuel/Programming/autostart/slock.sh</command>
+      </action>
+    </keybind>
+    <keybind key="XF86Calculator">
+      <action name="Execute">
+        <command>qalculate</command>
+      </action>
+    </keybind>
+    <keybind key="A-F2">
+      <action name="Execute">
+        <command>bashrun</command>
+      </action>
+    </keybind>
+    <keybind key="XF86TouchpadToggle">
+      <action name="Execute">
+        <command>/home/samuel/Programming/autostart/trackpad-toggle.sh</command>
+      </action>
+    </keybind>
     <keybind key="C-A-Right">
       <action name="GoToDesktop"/>
+    </keybind>
+    <keybind key="XF86AudioPrev">
+      <action name="Execute">
+        <command>xbacklight -dec 50</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioNext">
+      <action name="Execute">
+        <command>xbacklight -inc 50</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>amixer sset Master toggle &gt; /dev/null</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>amixer -c 0 set Master 10-</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>amixer -c 0 set Master 10+ unmute</command>
+      </action>
+    </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <command>gnome-screenshot</command>
+      </action>
     </keybind>
     <keybind key="C-A-Up">
       <action name="GoToDesktop"/>
@@ -217,45 +265,14 @@
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
-    <keybind key="S-C-space">
-      <action name="Execute">
-        <command>/home/kavya/Programming/trackpad-toggle.sh</command>
-      </action>
-    </keybind>
-    <keybind key="XF86Calculator">
-      <action name="Execute">
-        <command>qalculate-gtk</command>
-      </action>
-    </keybind>
     <keybind key="A-Escape">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
-    <keybind key="XF86HomePage">
-      <action name="Execute">
-        <command>dolphin</command>
-      </action>
-    </keybind>
-    <keybind key="H-W-l">
-      <action name="Execute">
-        <command>/home/kavya/Documents/lock.sh</command>
-      </action>
-    </keybind>
-    <keybind key="XF86HomePage"/>
-    <keybind key="XF86Mail">
-      <action name="Execute">
-        <command>thunderbird</command>
-      </action>
-    </keybind>
     <keybind key="A-space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="A-M-F2">
-      <action name="Execute">
-        <command>bashrun</command>
       </action>
     </keybind>
     <keybind key="A-Tab">
@@ -284,32 +301,11 @@
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>kfmclient openProfile filemanagement</command>
+        <command>dolphin</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>Konqueror</name>
         </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="W-Tab">
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
-        <width>683</width>
-        <height>768</height>
-      </action>
-    </keybind>
-    <keybind key="Print">
-      <action name="Execute">
-        <command>gnome-screenshot</command>
-      </action>
-    </keybind>
-    <keybind key="C-Tab">
-      <action name="MoveResizeTo">
-        <x>683</x>
-        <y>0</y>
-        <width>683</width>
-        <height>768</height>
       </action>
     </keybind>
   </keyboard>
@@ -318,7 +314,7 @@
     <!-- number of pixels the mouse must move before a drag begins -->
     <doubleClickTime>200</doubleClickTime>
     <!-- in milliseconds (1000 = 1 second) -->
-    <screenEdgeWarpTime>0</screenEdgeWarpTime>
+    <screenEdgeWarpTime>400</screenEdgeWarpTime>
     <!-- Time before changing desktops when the pointer touches the edge of the
        screen while moving a window, in milliseconds (1000 = 1 second).
        Set this to 0 to disable warping -->
@@ -385,7 +381,7 @@
         <action name="Move"/>
       </mousebind>
       <mousebind action="DoubleClick" button="Left">
-        <action name="ToggleMaximizeFull"/>
+        <action xmlns="http://openbox.org/3.4/rc" name="ToggleMaximize"/>
       </mousebind>
       <mousebind action="Click" button="Up">
         <action name="if">
@@ -510,7 +506,7 @@
         <action name="Unshade"/>
       </mousebind>
       <mousebind action="Click" button="Left">
-        <action name="ToggleAlwaysOnTop"/>
+        <action name="ToggleOmnipresent"/>
       </mousebind>
     </context>
     <context name="Shade">
@@ -613,7 +609,7 @@
     </context>
     <context name="Root">
       <!-- Menus -->
-      <mousebind action="Press" button="Middle">
+      <mousebind action="Press" button="Left">
         <action name="ShowMenu">
           <menu>client-list-combined-menu</menu>
         </action>
@@ -742,20 +738,21 @@
   </application>
 
   # end of the example
-  
-      <context name="AllDesktops">
-      <mousebind action="Press" button="Left">
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="Unshade"/>
-      </mousebind>
-      <mousebind action="Click" button="Left">
-        <action name="ToggleOmnipresent"/>
-      </mousebind>
-    </context>
-  
 -->
-    <application name="BGURxvt"><decor>no</decor><layer>below</layer><focus>yes</focus><position><x>center</x><y>center</y></position><desktop>all</desktop><skip_taskbar>true</skip_taskbar><maximized>true</maximized> #Only if you want a full size terminal.
-  </application>
+    <application title="*Dolphin">
+      <maximized>yes</maximized>
+    </application>
+    <application title="*GIMP">
+      <maximized>yes</maximized>
+    </application>
+    <application class="Inkscape">
+      <maximized>yes</maximized>
+    </application>
+    <application class="Chromium">
+      <maximized>yes</maximized>
+    </application>
+    <application type="dialog">
+      <maximized>no</maximized>
+    </application>
   </applications>
 </openbox_config>

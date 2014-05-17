@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
+	<menu id="None-18112" label="New Menu">
+		<item label="New Item">
+			<action name="Execute">
+				<execute>command</execute>
+			</action>
+		</item>
+	</menu>
 	<menu id="apps-editors-menu" label="Development">
 		<item label="Geany IDE">
 			<action name="Execute">
@@ -48,6 +55,11 @@
 				</execute>
 			</action>
 		</item>
+		<item label="Android Studio">
+			<action name="Execute">
+				<execute>android-studio</execute>
+			</action>
+		</item>
 		<item label="Bluefish">
 			<action name="Execute">
 				<execute>
@@ -64,11 +76,14 @@
 				</execute>
 			</action>
 		</item>
-		<item label="Skype">
+		<item label="Firefox">
 			<action name="Execute">
-				<execute>
-					skype
-				</execute>
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<item label="Thunderbird">
+			<action name="Execute">
+				<execute>thunderbird</execute>
 			</action>
 		</item>
 		<item label="Opera">
@@ -78,11 +93,9 @@
 				</execute>
 			</action>
 		</item>
-		<item label="Thunderbird">
+		<item label="Liferea">
 			<action name="Execute">
-				<execute>
-					thunderbird
-				</execute>
+				<execute>liferea</execute>
 			</action>
 		</item>
 		<item label="Deluge">
@@ -92,16 +105,9 @@
 				</execute>
 			</action>
 		</item>
-		<item label="Konqueror">
+		<item label="XChat">
 			<action name="Execute">
-				<command>
-					konqueror
-				</command>
-				<startupnotify>
-					<enabled>
-						yes
-					</enabled>
-				</startupnotify>
+				<execute>xchat</execute>
 			</action>
 		</item>
 		<item label="Pidgin Instant Messenger">
@@ -151,6 +157,11 @@
 				<execute>
 					/usr/bin/libreoffice --math
 				</execute>
+			</action>
+		</item>
+		<item label="LyX">
+			<action name="Execute">
+				<execute>lyx</execute>
 			</action>
 		</item>
 		<item label="Okular">
@@ -244,11 +255,9 @@
 				</execute>
 			</action>
 		</item>
-		<item label="Blender">
+		<item label="Kig">
 			<action name="Execute">
-				<execute>
-					blender
-				</execute>
+				<execute>kig</execute>
 			</action>
 		</item>
 		<item label="Gwenview">
@@ -263,28 +272,9 @@
 				</startupnotify>
 			</action>
 		</item>
-		<item label="Dia Diagram Editor">
-			<action name="Execute">
-				<command>
-					dia
-				</command>
-				<startupnotify>
-					<enabled>
-						yes
-					</enabled>
-				</startupnotify>
-			</action>
-		</item>
 	</menu>
 	<menu id="system-menu" label="System">
-		<item label="Obmenu">
-			<action name="Execute">
-				<execute>
-					obmenu
-				</execute>
-			</action>
-		</item>
-		<item label="Obconf">
+		<item label="ObConf">
 			<action name="Execute">
 				<command>
 					obconf
@@ -296,11 +286,24 @@
 				</startupnotify>
 			</action>
 		</item>
-		<item label="Obkey">
+		<item label="obmenu">
 			<action name="Execute">
-				<execute>
-					obkey
-				</execute>
+				<execute>obmenu</execute>
+			</action>
+		</item>
+		<item label="obkey">
+			<action name="Execute">
+				<execute>obkey</execute>
+			</action>
+		</item>
+		<item label="OBApps">
+			<action name="Execute">
+				<execute>obapps</execute>
+			</action>
+		</item>
+		<item label="xterm">
+			<action name="Execute">
+				<execute>xterm</execute>
 			</action>
 		</item>
 		<item label="Openbox Autostart Configuration">
@@ -310,11 +313,9 @@
 				</execute>
 			</action>
 		</item>
-		<item label="Tint2conf">
+		<item label="Tintwizard">
 			<action name="Execute">
-				<execute>
-					tint2conf
-				</execute>
+				<execute>tintwizard</execute>
 			</action>
 		</item>
 		<item label="System Monitor">
@@ -352,94 +353,8 @@
 				</execute>
 			</action>
 		</item>
-		<item label="Firefox">
-			<action name="Execute">
-				<execute>
-					firefox
-				</execute>
-			</action>
-		</item>
-		<item label="Windows XP">
-			<action name="Execute">
-				<execute>
-					vboxmanage startvm &quot;Windows XP&quot;
-				</execute>
-			</action>
-		</item>
 		<menu id="apps-editors-menu"/>
 		<menu id="apps-term-menu"/>
-		<menu id="root-menu-96046" label="Games">
-			<item label="Klotski">
-				<action name="Execute">
-					<execute>
-						gnotski
-					</execute>
-				</action>
-			</item>
-			<item label="Kollision">
-				<action name="Execute">
-					<execute>
-						kollision
-					</execute>
-				</action>
-			</item>
-			<item label="Nibbles">
-				<action name="Execute">
-					<execute>
-						gnibbles
-					</execute>
-				</action>
-			</item>
-			<item label="Chess">
-				<action name="Execute">
-					<execute>
-						glchess
-					</execute>
-				</action>
-			</item>
-			<item label="Travex">
-				<action name="Execute">
-					<execute>
-						gnotravex
-					</execute>
-				</action>
-			</item>
-			<item label="Mines">
-				<action name="Execute">
-					<execute>
-						gnomine
-					</execute>
-				</action>
-			</item>
-			<item label="Hedgewars">
-				<action name="Execute">
-					<execute>
-						hedgewars
-					</execute>
-				</action>
-			</item>
-			<item label="Mari0">
-				<action name="Execute">
-					<execute>
-						mari0
-					</execute>
-				</action>
-			</item>
-			<item label="Tux Racer">
-				<action name="Execute">
-					<execute>
-						etracer
-					</execute>
-				</action>
-			</item>
-			<item label="Mastermind">
-				<action name="Execute">
-					<execute>
-						gnome-mastermind
-					</execute>
-				</action>
-			</item>
-		</menu>
 		<menu id="apps-graphics-menu"/>
 		<menu id="apps-net-menu"/>
 		<menu id="apps-office-menu"/>
@@ -451,46 +366,36 @@
 					</execute>
 				</action>
 			</item>
-			<item label="Keepassx">
+			<item label="KeePassX">
 				<action name="Execute">
-					<execute>
-						keepassx
-					</execute>
+					<execute>keepassx</execute>
 				</action>
 			</item>
 		</menu>
 		<menu id="apps-multimedia-menu"/>
-		<menu id="apps-fileman-menu"/>
+		<menu execute="openbox-xdgmenu /etc/xdg/menus/lxde-applications.menu " id="pipe-981522" label="All Programs"/>
 		<separator label="System"/>
 		<menu id="system-menu"/>
 		<separator/>
 		<menu id="root-menu-221521" label="Exit">
 			<item label="Hibernate">
 				<action name="Execute">
-					<execute>
-						sudo pm-hibernate
-					</execute>
+					<execute>systemctl hibernate</execute>
 				</action>
 			</item>
 			<item label="Suspend">
 				<action name="Execute">
-					<execute>
-						sudo pm-suspend
-					</execute>
+					<execute>systemctl suspend</execute>
 				</action>
 			</item>
 			<item label="Reboot">
 				<action name="Execute">
-					<execute>
-						sudo /sbin/reboot
-					</execute>
+					<execute>systemctl reboot</execute>
 				</action>
 			</item>
-			<item label="Poweroff">
+			<item label="Halt">
 				<action name="Execute">
-					<execute>
-						poweroff
-					</execute>
+					<execute>systemctl poweroff</execute>
 				</action>
 			</item>
 		</menu>
